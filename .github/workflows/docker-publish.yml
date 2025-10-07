@@ -15,6 +15,13 @@ jobs:
   build-and-push:
     # 任务运行的环境
     runs-on: ubuntu-latest
+
+    # ---- 新增的权限设置 ----
+    permissions:
+      contents: read
+      packages: write
+    # -------------------------
+
     # 任务的步骤
     steps:
       # 第一步：检出您的代码
